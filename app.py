@@ -9,12 +9,6 @@ st.title("🥗 Customer Review Sentiment Analyzer")
 st.markdown("This app analyzes the sentiment of customer reviews to gain insights into their opinions.")
 
 
-# Import reviews.csv file
-# import pandas as pd 
-# df = pd.read_csv('reviews.csv')
-# st.write(df)
-
-
 # CSV file uploader
 uploaded_file = st.file_uploader(
     'Upload a CSV file with restaurant reviews',
@@ -100,7 +94,3 @@ fig = px.pie(
     names = sentiment_counts.index, 
     title = 'Sentiment Distribution')
 st.plotly_chart(fig)
-
-# Example usage
-# Write the results to the app
-#st.write(classify_sentiment_ollama(review_column))
